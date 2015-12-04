@@ -21,7 +21,7 @@ ls -rtlh 这几个参数（rtlh），这里称他们为开关选项，属于非�
 --help 比较特殊，随意在代码中的布局，要放到最前面
 比如默认是定位到屏幕中，有时候我们想把它定位到文件中
 --out  out.txt 非强制选项
-···Perl
+···perl
 use Getopt::Long;  #核心模块，非常好用，功能强悍
 #申明各种选项变量
 my ($errfile, $forcefile,$outfile,$gjffile); #非开关选项
@@ -87,6 +87,7 @@ usage("The gjffile  must be specified.")
 ···
 
 ##Getopt::Long::Descriptive
+
 这是一个新型模块，作者是RJBS
 corelist Getopt::Long::Descriptive
 非核心模块。把usage函数封装了而已。
